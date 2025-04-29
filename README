@@ -1,0 +1,79 @@
+Project Title:
+	Sentiment-Aware Chatbot using BERT
+
+Description:
+	This project implements a BERT-based chatbot capable of detecting emotions in real-time user conversations and responding empathetically through a command-line interface.
+
+	The system fine-tunes a BERT-base-uncased model on the ISEAR dataset and classifies user inputs into one of six emotions: joy, anger, sadness, fear.
+
+The project includes:
+
+	Model training and evaluation
+
+	Error analysis via confusion matrices
+
+	A live interactive chatbot session in the terminal
+
+How to Run the Project:
+
+	Install required libraries: pip install pandas torch scikit-learn transformers matplotlib seaborn
+
+Ensure the dataset is available:
+
+	Place the ISEAR.csv file in the same folder.
+
+	The dataset must be named ISEAR.csv 
+
+	The dataset should have two columns: content and sentiment.
+
+Run the Python script: main.py
+
+Process Flow:
+
+	Loads and preprocesses the dataset.
+
+	Fine-tunes the BERT model on the emotion-labeled text data.
+
+	Prints evaluation metrics: Accuracy, F1-Score, Precision, Recall.
+
+	Displays a detailed classification report and confusion matrix.
+
+	Launches an interactive chatbot loop in the terminal.
+
+Chatbot Usage:
+
+	After training and evaluation, the chatbot is ready.
+
+	Type any sentence and receive a predicted emotion with a response.
+
+	Type quit to exit the chatbot session.
+
+Project Structure:
+
+	Training: Fine-tuning BERT on the preprocessed emotion dataset.
+
+Evaluation: Performance metrics, detailed classification report, and confusion matrix visualization.
+
+	Error Analysis: Additional confusion matrix for error analysis.
+
+	Live Chatbot: User types text input and receives an emotion-aware response from the chatbot.
+
+Dependencies:
+
+	Python 3.8+
+
+	pandas
+
+	torch (PyTorch)
+
+	scikit-learn
+
+	transformers (Hugging Face)
+
+	matplotlib
+
+	seaborn
+
+
+
+		
